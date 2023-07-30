@@ -11,7 +11,14 @@ exports.getall=(req,res)=>{
 }
 exports.postadd=(req,res)=>{
     const product=new Product(req.body);
-    product.save();
+    try{
+        product.save();
+        res.send("done")
+    }
+    catch(err){
+        res.send(err)
+    }
+    
     console.log(req.body)
     console.log("bhupi")
     res.send(req.body);
