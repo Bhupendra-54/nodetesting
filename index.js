@@ -31,7 +31,7 @@ server.use(bodyParser.json())
 // server.use(express.json());
 server.use(bodyParser.urlencoded({ extended: true }));
  // server.use(express('default'));
-server.use('/main',Routes.router)
+server.use('/',Routes.router)
 server.listen(8080);
 console.log("hello world");
 

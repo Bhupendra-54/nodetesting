@@ -3,9 +3,9 @@ const fs=require('fs')
 const model=require('../models/product')
 const Product=model.Product;
 exports.getall=(req,res)=>{
-    const product=new Product(req.body)
-    product.save()
-    res.sendStatus(201)
+    // const product=new Product(req.body)
+    // product.save()
+    res.send("bhupendra singh")
     // console,log("aaya h")
     // res.json(products)
 }
