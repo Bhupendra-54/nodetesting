@@ -14,7 +14,7 @@ exports.postadd=(req,res)=>{
     product.save();
     console.log(req.body)
     console.log("bhupi")
-    res.sendStatus(201);
+    res.send(req.body);
    
 }
 exports.getone=async (req,res)=>{
