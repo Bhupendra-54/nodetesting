@@ -13,7 +13,7 @@ main().catch(err => console.log(err));
 async function main() {
   // await mongoose.connect('mongodb://127.0.0.1:27017/ecommerce');
   console.log("database connected")
- await mongoose.connect('mongodb+srv://bsc:mymongo12345@cluster0.hjzbzv0.mongodb.net/ecommerce');
+ await mongoose.connect('mongodb+srv://bsc:mymongo12345@cluster0.hjzbzv0.mongodb.net/aucs');
 }
 
 
